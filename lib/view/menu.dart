@@ -76,10 +76,6 @@ class _MenuState extends State<Menu> {
               child: Text('Set Cookie'),
             ),
             const PopupMenuItem<_MenuOptions>(
-              value: _MenuOptions.removeCookie,
-              child: Text('Remove Cookie'),
-            ),
-            const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.listCookies,
               child: Text('List Cookies'),
             ),
@@ -87,10 +83,13 @@ class _MenuState extends State<Menu> {
               value: _MenuOptions.addSessionStorageItem,
               child: Text('Add Session Storage Item'),
             ),
-
+            const PopupMenuItem<_MenuOptions>(
+              value: _MenuOptions.removeCookie,
+              child: Text('Remove Cookie'),
+            ),
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.clearCookies,
-              child: Text('Navigate to YouTube'),
+              child: Text('Clear Cookies'),
             )
           ],
         );
